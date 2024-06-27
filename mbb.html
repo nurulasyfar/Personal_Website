@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY BOYBAND</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #fff4f8;
+            color: #4a4a4a;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #6a9dcc;
+            color: white;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo img {
+            border-radius: 100%;
+            border: 2px solid white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .portfolio-section {
+            position: relative;
+            height: 100vh;
+            background-image: url('img/seahb.jpeg');
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat; 
+            color: #4a4a4a;
+            text-align: center;
+            padding-top: 100px; 
+            padding-bottom: 600px;
+        }
+
+        .portfolio-section .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            filter: blur(8px);
+            z-index: -1;
+        }
+
+        .portfolio-section .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(162, 182, 215, 0.8);
+            z-index: 0;
+        }
+
+        .portfolio-section .content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .portfolio-section h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 0;
+            color: #051e37;
+            background-color: #85a0bc;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .portfolio-section li {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        footer {
+            padding: 10px;
+            background-color: #39535d;
+            color: white;
+            text-align: center;
+            border-top: 2px solid white;
+        }
+
+        table img {
+            border: 5px solid #091d33;
+            border-radius: 10px;
+            margin: 0 20px;
+            transition: transform 0.3s;
+        }
+
+        table img:hover {
+            transform: scale(1.1);
+        }
+
+        .container {
+            padding: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-grow: 1;
+            margin-top: 20px; 
+        }
+
+        .gallery-item {
+            background-color: white;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s;
+            width: 25%;
+            height: 20%; 
+            box-sizing: border-box;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            border-bottom: 5px solid #512da8;
+        }
+
+        .gallery-item .description {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.jpg" width="100" height="50" alt="NURUL ASYIQIN FARHAH" title="NURUL ASYIQIN FARHAH - Remember That We are Always Together (SEVENTEEN)">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="personal.html" target="_blank">Personal Information</a></li>
+                <li><a href="family.html" target="_blank">Family</a></li>
+                <li><a href="gallery.html" target="_blank">Gallery</a></li>
+                <li><a href="hobbies.html"target="_blank">Hobbies</a></li>
+                <li><a href="friends.html" target="_blank">Friends</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="img/logo.jpg" width="100" height="50" alt="NURUL ASYIQIN FARHAH" title="NURUL ASYIQIN FARHAH - Remember That We are Always Together (SEVENTEEN)">
+        </div>
+    </header>
+
+    <section class="portfolio-section">
+        <div class="content">
+            <h1>PHOTOS</h1>
+        
+            <div class="container">
+                <div class="gallery-item">
+                    <a href="mbb.html"><img src="img/sv.jpg" alt="Image 4"></a>
+                    <div class="description">SEVENTEEN
+                        <audio controls>
+                            <source src="img/sevmus.mp3" type="audio/ogg">
+                            <source src="img/sevmus.mp3" type="audio/mpeg">
+                          </audio>
+                          <p class="music-credit">Music credit: SEVENTEEN - DON'T WANNA CRY</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <a href="mbb.html"><img src="img/bnd.jpg" alt="Image 4"></a>
+                    <div class="description">BOYNEXTDOOR
+                        <audio controls>
+                            <source src="img/bndmus.mp3" type="audio/ogg">
+                            <source src="img/bndmus.mp3" type="audio/mpeg">
+                          </audio>
+                          <p class="music-credit">Music credit: BOYNEXTDOOR - CRYING</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <a href="mbb.html"><img src="img/jeff.jpg" alt="Image 4"></a>
+                    <div class="description">JEFF SATUR
+                        <audio controls>
+                            <source src="img/jeffmus.mp3" type="audio/ogg">
+                            <source src="img/jeffmus.mp3" type="audio/mpeg">
+                          </audio>
+                          <p class="music-credit">Music credit: JEFF SATUR - GHOST</p>
+                    </div>
+                </div>
+            </div>
+
+        <h1>FAVOURITE MV</h1>
+        <div class="container">
+            <div class="gallery-item">
+                <video width="300" controls>
+                    <source src="img/favmv.mp4" type="video/mp4">
+                    <source src="img/favmv.mp4" type="video/ogg">
+                  </video>
+                <div class="description">❤︎</div>
+                <p class="video-credit">Video credit: SEVENTEEN - TO YOU</p>
+                <a href="https://www.youtube.com/watch?v=EJF2PV3BQtQ" target="_blank" class="button">Click Me!</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>©️NURUL ASYIQIN FARHAH BINTI AHMAD AZHARI</p>
+    </footer>
+</body>
+</html>

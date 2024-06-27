@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #fff4f8;
+            color: #4a4a4a;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #6a9dcc;
+            color: white;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo img {
+            border-radius: 100%;
+            border: 2px solid white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .portfolio-section {
+            position: relative;
+            min-height: 100vh;
+            background-color: #a2b6d7;
+            color: #4a4a4a;
+            text-align: center;
+            padding-top: 120px;
+        }
+
+        .portfolio-section .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            filter: blur(8px);
+            z-index: -1;
+        }
+
+        .portfolio-section .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(162, 182, 215, 0.8);
+            z-index: 0;
+        }
+
+        .portfolio-section .content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .portfolio-section h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 0;
+            color: #051e37;
+            background-color: #85a0bc;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .portfolio-section li {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        footer {
+            padding: 10px;
+            background-color: #39535d;
+            color: white;
+            text-align: center;
+            border-top: 2px solid white;
+        }
+
+        table img {
+            border: 5px solid #091d33;
+            border-radius: 10px;
+            margin: 0 20px;
+            transition: transform 0.3s;
+        }
+
+        table img:hover {
+            transform: scale(1.1);
+        }
+
+        .container {
+            padding: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-grow: 1;
+            margin-top: 20px; 
+        }
+
+        .gallery-item {
+            background-color: white;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s;
+            width: 20%;
+            height: 50%; 
+            box-sizing: border-box;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            border-bottom: 5px solid #512da8; 
+        }
+
+        .gallery-item .description {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.jpg" width="100" height="50" alt="NURUL ASYIQIN FARHAH" title="NURUL ASYIQIN FARHAH - Remember That We are Always Together (SEVENTEEN)">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="personal.html" target="_blank">Personal Information</a></li>
+                <li><a href="family.html" target="_blank">Family</a></li>
+                <li><a href="gallery.html" target="_blank">Gallery</a></li>
+                <li><a href="hobbies.html"target="_blank">Hobbies</a></li>
+                <li><a href="friends.html" target="_blank">Friends</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="img/logo.jpg" width="100" height="50" alt="NURUL ASYIQIN FARHAH" title="NURUL ASYIQIN FARHAH - Remember That We are Always Together (SEVENTEEN)">
+        </div>
+    </header>
+
+    <section class="portfolio-section">
+        <div class="content">
+            <h1>MY SELF</h1>
+            <center>
+                <table cellspacing="5" cellpadding="5">
+                    <tr>
+                        <td><img src="img/babyme.jpg" width="200" height="200" title="4 MONTH"></td>
+                        <td><img src="img/tahun6.jpg" width="200" height="200" title="12 YEAR OLDS"></td>
+                        <td><img src="img/mestpm.jpg" width="200" height="200" title="18 YEAR OLDS"></td>
+                    </tr>
+                </table>
+            </center>
+            <ul>
+                <li>Name: Nurul Asyiqin Farhah Binti Ahmad Azhari</li>
+                <li>Nickname: Nurul</li>
+                <li>Email Address: nurulahmadaz@gmail.com</li>
+                <li>Address:No 10 Rumah Murah, Jalan Sri Behrang 8, 35950 Behrang Stesen, Perak</li>
+                <li>Birthday: 14 December</li>
+                <li>Birth Place: Hospital Slim River, Perak</li>
+                <li>MBTI: INTP</li>
+            </ul>
+        </div>
+
+        <h1>MY EDUCATION</h1>
+
+        <div class="container">
+            <div class="gallery-item">
+                </a><img src="img/skss.jpg" alt="Image 1">
+                <div class="description">I started my primary school at Sekolah Kebangsaan Sungai Selisek from Prasekolah to standard 6</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/smkbb22.png" alt="Image 2">
+                <div class="description">I started my secondary school at SMK Bandar Behrang 2020 for 5 years. I was a sains student before i take my STPM.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/smkpc.jpeg" alt="Image 3">
+                <div class="description">I decided to take STPM at SMK Proton City for almost 2 years.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/uitm.png" alt="Image 4">
+                <div class="description">Know I continue my degree in Library management at UiTM. </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>©️NURUL ASYIQIN FARHAH BINTI AHMAD AZHARI</p>
+    </footer>
+</body>
+</html>
